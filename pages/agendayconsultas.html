@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agenda y Consultas</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body class="gridContainer">
+		<!-- Encabezado del sitio -->
+	<header class="header">
+		<!-- logo y titulo -->
+		<div class="tituloLogo"> <!-- esta etiqueta se usa en el css para estilizar--> 
+			<div>
+				<a href="../index.html"><img  src="../assets/psico.png" alt="logo" width="100px" height="100px"></a>
+			</div>
+
+			<a href="../index.html"><h1>Psicoeducativo</h1></a>
+		</div>
+		<!-- Cierre logo -->
+		<!--  inicio nav -->
+		<div>
+		<nav>
+			<ul class="navStyle">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="#">Agenda y Consultas</a></li>
+				<li><a href="guias.html">Guias</a></li>
+				<li><a href="novedades.html">Novedades</a></li>
+				<li><a href="empresa.html">Empresa</a></li>
+			</ul>
+		</nav>
+		</div>
+	<!-- cierre nav-->
+	</header>
+	<!-- Fin encabezado del sitio -->
+	<main>
+		<section class="gridMain">
+			<h2>Elegi la fecha que queras que nos contactemos contigo y deja tus datos de contacto!</h2>
+		<!-- Inicio Formulario ingreso de datos -->
+			<h4>
+				Contacto: 
+			</h4>
+			<p> A traves del numero +541122551789 o si no a traves de las redes sociales de Psicoeducativo</p>
+		</section>	
+	</main>
+	
+	<!-- inicio del formulario-->
+	<div class="gridForm">
+		<form class="agendaYconsultaForm"> <!--etiqueta usada en css para estilizar-->
+			<label for="nombre y apellido">Nombre y Apellido</label><br>
+			<input type="text" id="nombre y apellido" placeholder="Escribe tu Nombre y Apellido" name="nombre y apellido"><br>
+			<label for="telefono">Telefono</label><br>
+			<input type="number"id="telefono" placeholder="Escribe tu numero telefonico" name="telefono"><br>
+			<label for="correo electronico">Correo Electronico</label><br>
+			<input type="mail"id="correo electronico" placeholder="Correo Electronico" name="correo electronico">
+			<br><br> 
+			<!--Se agrega un segundo br para dar mas espacio -->
+			<!--Cierre formulario ingreso de datos-->
+
+			<!--Inicio formulario ingreso de fecha-->
+			<label for="Ingresa una fecha">Ingresa una fecha:</label><br>
+			<input type="date"id="Ingresa una fecha" name="Ingresa una fecha"><br>
+			
+				<div> <br>
+			
+					<input type="submit" value="Enviar" name="Enviar" class="botonEnviar">
+			
+				</div>
+		</form>
+			<!-- Cierre Formulario ingreso de fecha-->
+		</div>
+
+	
+<footer class="gridFooter">
+	<div class="footerLogo">
+		<!-- logo -->
+		<a href="../index.html"><img  src="../assets/psico.png" alt="logo" width="100px" height="100px"></a>
+	</div>
+	<div class="navFooterStyle">
+		<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="agendayconsultas.html">Contacto</a></li>
+				<li><a href="empresa.html">Acerca de Nosotros</a></li>
+		</ul>
+	</div>
+	<!-- contacto -->
+
+		<!--Logos RSS y enlaces-->
+	<div class="footerStyleRss">
+		<h4 class="h3rss">RSS</h4>
+		<ul>
+		<li><a href="https://instagram.com" target="_blank"><img src="../assets/iglogo.png"width="20px" height="20px"></a></li>
+		
+		<li><a href="https://facebook.com" target="_blank"><img src="../assets/fblogo.png"width="20px" height="20px"></a></li>
+		
+		<li><a href="https://twitter.com" target="_blank"><img src="../assets/twitter.png" width="20px" height="20px"></a></li>
+		</ul>
+	</div>
+</footer>
+		<!-- cierre footer -->
+</body>
+</html>
