@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,900&display=swap" rel="stylesheet">
+  	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="gridContainerIndex">
@@ -14,10 +15,10 @@
 	<header class="header">
 		<!-- logo y titulo -->
 		<div class="tituloLogo">
-			<div>
+			<div data-aos="fade-down" data-aos-duration="1000">
 				<a href="index.html"><img  src="assets/psico.png" alt="logo" width="100px" height="100px"></a>
 			</div>
-			<a href="index.html"><h1>Psicoeducativo</h1></a>
+			<a href="index.html" data-aos="fade-down" data-aos-duration="1000"><h1>Psicoeducativo</h1></a>
 		</div>
 		<!-- Cierre logo -->
 		<!--  inicio nav -->
@@ -36,10 +37,11 @@
 	</header>
 	<!-- Fin encabezado del sitio -->
 	<main>
-		
-		<section class="sideIndex">
+		<div class="gradiente">
 		<h2>Ayuda Psicologica y Educativa ¡al alcance de todos!</h2>
-	<div>
+		</div>
+		<section class="sideIndex">
+		
 	<div>
 		<p>En Psicoeducativo buscamos como equipo multidisiplinario la atencion integral de niños y adolescentes en las etapas de desarollo educativo medio e inicial, con foco en la atencion personal y a distancia, avalado por profesionales del area de la Psicologia y Psicopedagogia</p>
 	</div>
@@ -66,13 +68,15 @@
 	</main>
 	<section class="gridImgIndex">
 			<!-- img -->
+			<div data-aos="fade-right" data-aos-duration="1000">
 			<div>
 				<img src="assets/kidsandteacher.jpg" width="343px" height="257px" class="contentMediaIndex">
 			</div>	
 			
 			<div>
 				<img src="assets/kidsitting.jpg" width="343px" height="260px" class="contentMediaIndex">
-			</div>	
+			</div>
+			</div>		
 	</section>	
 	<!-- Cierre contenido -->
 	<!-- inicio footer -->
@@ -103,5 +107,9 @@
 	</div>
 </footer>
 	<!-- cierre footer -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

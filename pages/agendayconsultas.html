@@ -7,19 +7,18 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body class="gridContainer">
 		<!-- Encabezado del sitio -->
 	<header class="header">
 		<!-- logo y titulo -->
-		<div class="tituloLogo"> <!-- esta etiqueta se usa en el css para estilizar--> 
-			<div>
-				<a href="../index.html"><img  src="../assets/psico.png" alt="logo" width="100px" height="100px"></a>
+		<div class="tituloLogo">
+			<div data-aos="fade-down" data-aos-duration="1000">
+				<a href="index.html"><img  src="../assets/psico.png" alt="logo" width="100px" height="100px"></a>
 			</div>
-
-			<a href="../index.html"><h1>Psicoeducativo</h1></a>
+			<a href="index.html" data-aos="fade-down" data-aos-duration="1000"><h1>Psicoeducativo</h1></a>
 		</div>
 		<!-- Cierre logo -->
 		<!--  inicio nav -->
@@ -39,7 +38,7 @@
 	<!-- Fin encabezado del sitio -->
 	<main>
 		<section class="gridMain">
-			<h2>Elegi la fecha que queras que nos contactemos contigo y deja tus datos de contacto!</h2>
+			<h2 class="gradiente">Elegi la fecha que queras que nos contactemos contigo y deja tus datos de contacto!</h2>
 		<!-- Inicio Formulario ingreso de datos -->
 			<h4>
 				Contacto: 
@@ -102,5 +101,9 @@
 	</div>
 </footer>
 		<!-- cierre footer -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
