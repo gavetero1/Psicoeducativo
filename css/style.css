@@ -1,10 +1,10 @@
 /*mediaqueire para index.html*/
 @media only screen and (min-width: 0px) and (max-width: 768px){
-	
+
 	/*inicio media aplicada a index.html mobile*/
 	.gridContainerIndex {
-		grid-template-areas: "header" 
-												 "sideIndex"  
+		grid-template-areas: "header"
+												 "sideIndex"
 												 "img"
 												 "footer";
 		gap: 10px;
@@ -57,7 +57,7 @@
 }
 
 .navStyle {
-  background-color: lightblue; 
+  background-color: lightblue;
   list-style-type: none;
   text-align: center;
   margin: 0;
@@ -75,10 +75,13 @@
 	text-decoration: none;
 }
 
-.navStyle li a:hover {
+.navStyle1 li a:hover {
 	color: red;
 }
-	
+
+.navStyle1 {
+	background-color: lightblue !important;
+}
 /*css img*/
 
 .contentMediaIndex {
@@ -86,19 +89,11 @@
 	border-color: darkred;
 	border: 2px solid;
 	border-color: darkred;
-	margin-left: 70px;
+	/*margin-left: 70px;*/
 }
 
 footer {
 	background-color: lightblue;
-	margin-top: 50px;
-	display: flex;
-	justify-content: flex-start;
-	padding: 0 100px;
-}
-
-.gridFooter {
-	grid-area: footer;
 }
 
 .footerLogo {
@@ -148,15 +143,15 @@ footer {
 
 .gridContainer {
 	display: grid;
-	grid-template-areas: "header" 
-											 "contenido" 
-											 "form" 
+	grid-template-areas: "header"
+											 "contenido"
+											 "form"
 											 "footer";
 	gap: 10px;
  	grid-template-columns: 100%;
  	font-family: roboto;
  	margin: 0;
- 	padding: 0;                     
+ 	padding: 0;
 }
 
 .header {
@@ -179,16 +174,19 @@ padding-right: 10px;
 .gridFooter {
 	grid-area: footer;
 }
-
 .agendaYconsultaForm {
+  border: 3px solid darkcyan !important;
+  border-radius: 4px !important;
+}
+/*.agendaYconsultaForm {
   padding: 12px 20px;
   border: 3px solid #ccc;
   border-radius: 4px;
   box-sizing: content-box;
   border-style: ridge;
-  border-color: darkred;  
+  border-color: darkred;
   margin-top: 20px;
-}
+}*/
 
 }
 
@@ -206,12 +204,13 @@ body {
 /*inicio de grid index*/
 .gridContainerIndex {
 	display: grid;
-	grid-template-areas:"header header" 
-											"img sideIndex" 
+	grid-template-areas:"header header"
+											"img sideIndex"
 											"footer footer";
 	gap: 20px; /*margen de separacion entre las diferentes secciones del template area*/
 
 }
+/*clases aplicadas al index y agenda los cuales llevan bootstrap*/
 
 .header {
 	grid-area: header;
@@ -219,7 +218,7 @@ body {
 
 .gridImgIndex {
 	grid-area: img ;
-  padding-left:50px;  
+  padding-left:50px;
 }
 .sideIndex {
 	grid-area: sideIndex;
@@ -236,6 +235,15 @@ body {
 	grid-area: header;}
 
 .tituloLogo {
+	background-image: url(../assets/psicopattern.jpg);
+	background-size: 30%;
+	background-repeat: repeat;
+}
+
+/*css sin boot para los demas html*/
+
+.tituloLogoNoBoot
+{
 	display: flex;
 	justify-content: center;
 	background-image: url(../assets/psicopattern.jpg);
@@ -249,35 +257,59 @@ body {
 }
 
 .tituloLogo a {
+	text-decoration: none;
+	color: black;
+}
+/*css sin boot*/
+.tituloLogoNoBoot a {
 	margin: auto 0;
 	text-decoration: none;
 	color: black;
 }
 
-.navStyle {
-  background-color: lightblue; 
+.navStyleNoBoot {
+	background-color: lightblue; 
   list-style-type: none;
   text-align: center;
   margin: 0;
   padding: 0;
-  }
+}
 
-.navStyle li {
+.navStyleNoBoot li {
 	display: inline-block;
 	font-size: 25px;
 	padding: 20px;
 }
 
-.navStyle li a {
+.navStyleNoBoot li a {
 	color: black;
 	text-decoration: none;
 }
 
-.navStyle li a:hover {
+.navStyleNoBoot li a:hover {
 	color: red;
 	font-family: cursive;
 }
 
+
+/*css para boot*/
+.navStyle1 {
+  background-color: lightblue !important;
+  }
+
+ .color{
+ 	color: #b54747 !important;
+ }
+
+.navStyle1 li a:hover {
+	color: #b54747 !important;
+}
+.hoverFooter {
+	text-decoration-color: black !important;
+}
+.hoverFooter:hover {
+	color: #b54747 !important;
+}
 .contentMediaIndex {
 	border-radius: 15px;
 	border-color: darkred;
@@ -291,8 +323,8 @@ body {
 
 .gridContainer {
 	display: grid;
-	grid-template-areas: "header header" 
-											 "contenido form" 
+	grid-template-areas: "header header"
+											 "contenido form"
 											 "footer footer";
 	gap: 20px;
 }
@@ -314,29 +346,10 @@ body {
 }
 
 .agendaYconsultaForm {
-  padding: 12px 20px;
-  border: 3px solid #ccc;
-  border-radius: 4px;
-  box-sizing: content-box;
-  border-style: ridge;
-  border-color: darkred;  
-  margin-top: 20px;
+  border: 3px solid darkcyan !important;
+  border-radius: 4px !important;
 }
 
-input { 
-	margin-bottom: 10px; 
-	background-color: whitesmoke;
-}
-
-input:focus {
-	background-color: lightblue;
-}
-
-.botonEnviar {
-	background-color: whitesmoke;
-	border-radius: 4px;
-	cursor: pointer;
-}
 
 /*CIERRE AGENDA Y CONSULTA HTML MEDIA*/
 
@@ -345,7 +358,7 @@ input:focus {
 .parrafo1Y2 {
 	margin-left: 30px;
 	margin-right: 30px;
-	justify-content: center;	
+	justify-content: center;
 }
 
 .parrafo3 {
@@ -381,7 +394,7 @@ input:focus {
 	border-radius: 100px;
 	border: 3px solid;
 	border-color: darkred;
-  
+
 }
 /*iframe*/
 .h3iframe {
@@ -404,59 +417,70 @@ input:focus {
 /*inicio footer*/
 footer {
 	background-color: lightblue;
+}
+/* etiqueta footer  para los html que no poseen bootstrap (guias, novedades y empresa)*/
+.gridFooter {
+
+	background-color: lightblue;
 	margin-top: 40px;
 	display: flex;
 	justify-content: flex-start;
 	padding: 0 100px;
+
 }
 
-.gridFooter {
-	grid-area: footer;
-}
-
-.footerLogo {
+.footerLogoNoBoot {
 	display: flex;
 	justify-content: left;
 	margin-right: 35px;
 }
 
-.navFooterStyle {
+.navFooterStyleNoBoot {
 	font-size: 15px;
 	display: flex;
 	justify-content: start;
 	margin-right: 35px;
 }
 
-.navFooterStyle ul {
+.navFooterStyleNoBoot ul {
 	padding: 0;
 }
 
-.navFooterStyle ul li {
+.navFooterStyleNoBoot ul li {
 	list-style-type: none;
 }
 
-.navFooterStyle ul li a {
+.navFooterStyleNoBoot ul li a {
 	text-decoration: none;
 }
 
 
-.footerStyleRss {
+.footerStyleRssNoBoot {
 	margin-right: 35px;
 }
 
-.footerStyleRss ul {
+.footerStyleRssNoBoot ul {
 	display: flex;
 	padding: 0;
 }
 
-.footerStyleRss ul li {
+.footerStyleRssNoBoot ul li {
 	list-style-type: none;
 	margin-right: 15px;
-}/*CIERRE FOOTER*/
 
+}
+/*CIERRE FOOTER*/
+/*aplicada a los html con bootstrap index y agenda y consulta*/
 .gradiente {
-	width: 100%;
-	height: 50px;
 	background-image: linear-gradient(lightblue,white);
+}
+
+/* clase creada para centrar navbar de boot*/
+.navCenter {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
 }
 }/*CIERRE MEDIA DESKTOP*/

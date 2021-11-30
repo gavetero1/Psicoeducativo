@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -14,17 +15,16 @@
 		<!-- Encabezado del sitio -->
 	<header>
 		<!-- logo y titulo -->
-		<div class="tituloLogo">
-			<div>
-				<a href="../index.html"><img  src="../assets/psico.png" alt="logo" width="100px" height="100px"></a>
+		<div class="tituloLogoNoBoot">
+			<div data-aos="fade-down" data-aos-duration="1000">
+				<a href="index.html"><img  src="../assets/psico.png" alt="logo" width="100px" height="100px"></a>
 			</div>
-			
-			<a href="../index.html"><h1>Psicoeducativo</h1></a>
+			<a href="index.html" data-aos="fade-down" data-aos-duration="1000"><h1>Psicoeducativo</h1></a>
 		</div>
 		<!-- Cierre logo -->
 		<!--  inicio nav -->
 		<nav>
-			<ul class="navStyle">
+			<ul class="navStyleNoBoot">
 				<li><a href="../index.html">Inicio</a></li>
 				<li><a href="agendayconsultas.html">Agenda y Consultas</a></li>
 				<li><a href="guias.html">Guias</a></li>
@@ -50,12 +50,12 @@
 		</section>
 	</main>
 	
-<footer>
-	<div class="footerLogo">
+<footer class="gridFooter">
+	<div class="footerLogoNoBoot">
 		<!-- logo -->
 		<a href="../index.html"><img  src="../assets/psico.png" alt="logo" width="100px" height="100px"></a>
 	</div>
-	<div class="navFooterStyle">
+	<div class="navFooterStyleNoBoot">
 		<ul>
 				<li><a href="../index.html">Inicio</a></li>
 				<li><a href="agendayconsultas.html">Contacto</a></li>
@@ -65,7 +65,7 @@
 	<!-- contacto -->
 
 		<!--Logos RSS y enlaces-->
-	<div class="footerStyleRss">
+	<div class="footerStyleRssNoBoot">
 		<h4 class="h3rss">RSS</h4>
 		<ul>
 		<li><a href="https://instagram.com" target="_blank"><img src="../assets/iglogo.png"width="20px" height="20px"></a></li>
@@ -77,5 +77,9 @@
 	</div>
 </footer>
 	<!-- cierre footer -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
