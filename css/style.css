@@ -2,39 +2,7 @@
 @media only screen and (min-width: 0px) and (max-width: 768px){
 
 	/*inicio media aplicada a index.html mobile*/
-	.gridContainerIndex {
-		grid-template-areas: "header"
-												 "sideIndex"
-												 "img"
-												 "footer";
-		gap: 10px;
- 		grid-template-columns: 100%;
- 		font-family: roboto;
- 		margin: 0;
- 		padding: 0;
-	}
-
-.header {
-	grid-area: header;
-	margin: 0;}
-
-.sideIndex {
-	grid-area: sideIndex;
-	grid-column: 1;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: justify;
-}
-.gridImgIndex {
-	grid-area: img ;
-	grid-column: 1;
-}
-
-.gridFooter {
-	grid-area: footer;
-	margin-top: 10px;
-}
-/*fin del template area*/
+	
 
 /*inicio modificacion css header*/
 .tituloLogo {
@@ -138,55 +106,12 @@ footer {
 
 /*fin media mobile para index.html*/
 
-/*INICIO MEDIA MOBILE PARA AGENDA Y CONSULTA.HTML*/
 /* etiqueta css de header y footer se aplica automaticamente al estar dentro de la media mobile*/
 
-.gridContainer {
-	display: grid;
-	grid-template-areas: "header"
-											 "contenido"
-											 "form"
-											 "footer";
-	gap: 10px;
- 	grid-template-columns: 100%;
- 	font-family: roboto;
- 	margin: 0;
- 	padding: 0;
-}
-
-.header {
-	grid-area: header;
-	margin: 0px;
-}
-
-.gridMain{
-grid-area: contenido;
-padding-left: 10px;
-padding-right: 10px;
-}
-
-.gridForm {
-	grid-area: form;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.gridFooter {
-	grid-area: footer;
-}
 .agendaYconsultaForm {
   border: 3px solid darkcyan !important;
   border-radius: 4px !important;
 }
-/*.agendaYconsultaForm {
-  padding: 12px 20px;
-  border: 3px solid #ccc;
-  border-radius: 4px;
-  box-sizing: content-box;
-  border-style: ridge;
-  border-color: darkred;
-  margin-top: 20px;
-}*/
 
 }
 
@@ -201,20 +126,10 @@ body {
 	margin: 0;
 	padding: 0;
 }
-/*inicio de grid index*/
-.gridContainerIndex {
-	display: grid;
-	grid-template-areas:"header header"
-											"img sideIndex"
-											"footer footer";
-	gap: 20px; /*margen de separacion entre las diferentes secciones del template area*/
+/*inicio de css boot index*/
 
-}
 /*clases aplicadas al index y agenda los cuales llevan bootstrap*/
 
-.header {
-	grid-area: header;
-}
 
 .gridImgIndex {
 	grid-area: img ;
@@ -232,7 +147,8 @@ body {
 /*inicio header*/
 
 .header {
-	grid-area: header;}
+	grid-area: header;
+}
 
 .tituloLogo {
 	background-image: url(../assets/psicopattern.jpg);
@@ -240,7 +156,43 @@ body {
 	background-repeat: repeat;
 }
 
-/*css sin boot para los demas html*/
+/*nav  boot*/ 
+
+.navStyle1 {
+  background-color: lightblue !important;
+  }
+
+ .color{
+ 	color: #b54747 !important;
+ }
+
+.navStyle1 li a:hover {
+	color: #b54747 !important;
+}
+
+/* clase creada para centrar navbar de boot*/
+.navCenter {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+}
+
+.hoverFooter {
+	text-decoration-color: black !important;
+}
+.hoverFooter:hover {
+	color: #b54747 !important;
+}
+.contentMediaIndex {
+	border-radius: 15px;
+	border-color: darkred;
+	border: 2px solid;
+	border-color: darkred;
+}
+
+/*css sin boot para los demas html que no tienen aplicado bootstrap*/
 
 .tituloLogoNoBoot
 {
@@ -291,67 +243,16 @@ body {
 	font-family: cursive;
 }
 
-
-/*css para boot*/
-.navStyle1 {
-  background-color: lightblue !important;
-  }
-
- .color{
- 	color: #b54747 !important;
- }
-
-.navStyle1 li a:hover {
-	color: #b54747 !important;
-}
-.hoverFooter {
-	text-decoration-color: black !important;
-}
-.hoverFooter:hover {
-	color: #b54747 !important;
-}
-.contentMediaIndex {
-	border-radius: 15px;
-	border-color: darkred;
-	border: 2px solid;
-	border-color: darkred;
-}
-
 /*CIERRE INDEX.HTML MEDIA*/
 
-/*inicio main agenda y consulta.html*/
+/*modificacion form agenda y consulta.html*/
 
-.gridContainer {
-	display: grid;
-	grid-template-areas: "header header"
-											 "contenido form"
-											 "footer footer";
-	gap: 20px;
-}
-.header {
-	grid-area: header;
-}
-.gridMain {
-	grid-area: contenido;
-	padding-left:100px ;
-}
-
-.gridForm {
-	grid-area: form;
-	padding-right:100px ;
-}
-
-.gridFooter {
-	grid-area: footer;
-}
 
 .agendaYconsultaForm {
   border: 3px solid darkcyan !important;
   border-radius: 4px !important;
 }
 
-
-/*CIERRE AGENDA Y CONSULTA HTML MEDIA*/
 
 /* inicio guias.html*/
 
@@ -372,7 +273,7 @@ body {
 	text-decoration: none;
 }
 
-.contentMediaImg{
+.contentMediaImg {
 	border-radius: 15px;
 	border: 3px solid;
 	border-color: darkred;
@@ -475,12 +376,5 @@ footer {
 	background-image: linear-gradient(lightblue,white);
 }
 
-/* clase creada para centrar navbar de boot*/
-.navCenter {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 0;
-	text-align: center;
 }
-}/*CIERRE MEDIA DESKTOP*/
+  /*CIERRE MEDIA DESKTOP*/
